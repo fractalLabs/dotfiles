@@ -1,0 +1,36 @@
+alias g="git"
+alias a="git add -A"
+alias am="git add -A;git commit -m"
+alias gst="git status"
+alias gb="git branch --color"
+alias gm="git commit -m"
+alias gcm="git commit -a -v"
+alias gco="git checkout"
+alias pull="git pull"
+alias b="git pull"
+alias push="git push"
+alias s="git push"
+alias pp="git pull; git push"
+
+alias clone="git clone"
+alias status="git status"
+alias log="git log"
+alias slog="git shortlog"
+alias undopush="git push -f origin HEAD^:master"
+
+alias aor="git remote add origin"
+
+
+flow() {
+	git add -A
+	git commit -m $1
+	git pull
+	git push
+}
+
+
+function novo {
+   fnew $1
+   cd $1
+   repository $1
+}

@@ -1,0 +1,16 @@
+alias l=lein
+alias ld="lein deps"
+alias d="lein deps"
+alias lr="lein repl"
+alias r="lein repl"
+alias lj="lein jar"
+alias j="LEIN_SNAPSHOTS_IN_RELEASE=y lein jar"
+alias jj="lein uberjar"
+alias cfind="cljr search"
+alias cf="cljr search"
+alias t="lein test"
+alias lt=t
+alias at="lein autotest"
+alias cc="lein deps, test, uberjar"
+alias lrs="lein ring server"
+alias ur="cd /lab/lab;r"
