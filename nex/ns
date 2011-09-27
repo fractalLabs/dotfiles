@@ -1,0 +1,10 @@
+#!/bin/bash
+#written by iesaya, http://bashscripts.org/forum/viewtopic.php?f=7&t=963
+
+if [ -n "$1" ]; then
+  echo "#!/bin/bash" > $1
+  chmod +x $1
+  mate $1
+else
+  echo "This command needs an argument"
+fi
