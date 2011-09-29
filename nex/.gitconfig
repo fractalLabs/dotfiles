@@ -1,0 +1,14 @@
+[user]
+	name = nex
+	email = andres@fractalmedia.mx
+[core]
+	autocrlf = input
+	editor = mate -w
+	quotepath = false
+	excludesfile = ~/.gitignore
+[github]
+	user = nez
+[color]
+	diff = auto
+	status = auto
+	branch = auto
