@@ -1,7 +1,10 @@
 alias g="git"
 alias a="git add -A"
 alias am="git add -A;git commit -m"
+alias gst="git status"
 alias gb="git branch --color"
+alias gm="git commit -m"
+alias gcm="git commit -a -v"
 alias gco="git checkout"
 alias pull="git pull"
 alias b="git pull"
@@ -10,7 +13,6 @@ alias s="git push"
 alias pp="git pull; git push"
 
 alias clone="git clone"
-alias gst="git status"
 alias status="git status"
 alias log="git log"
 alias slog="git shortlog"
@@ -26,8 +28,9 @@ flow() {
 	git push
 }
 
+
 function novo {
-   lein fnew $1
+   fnew $1
    cd $1
    repository $1
 }

@@ -112,6 +112,7 @@ md() {
   mkdir -p "$@" && cd "$@"
 }
 
+
 # All the dig info
 digga() {
   dig +nocmd "$1" any +multiline +noall +answer
@@ -210,9 +211,7 @@ echo "---------------------------------------------------"
 }
 
 #bu - Back Up a file. Usage "bu filename.txt" 
-bu () { 
-	cp $1 ${1}-`date +%Y%m%d%H%M`.backup
-}
+bu () { cp $1 ${1}-`date +%Y%m%d%H%M`.backup ; }
 
 
 #OSX defaults
@@ -294,4 +293,4 @@ source '/Users/nex/.git_aliases'
 
 #cosas que no entiendo
 # One of @janmoesen’s ProTip™s https://github.com/mathiasbynens/dotfiles/blob/master/.aliases
-#for method in GET HEAD POST PUT DELETE TRACE OPTIONS; do alias "$method"="lwp-request -m '$method'"; done
+for method in GET HEAD POST PUT DELETE TRACE OPTIONS; do alias "$method"="lwp-request -m '$method'"; done
