@@ -12,8 +12,8 @@ alias t10="cd /nex/todo;lein run;cd -"
 alias bo=boom
 
 #txts de lein y git
-alias agit="cat ~/.git_aliases"
-alias alein="cat ~/.lein_aliases"
+alias cgit="cat ~/.git_aliases"
+alias clein="cat ~/.lein_aliases"
 #tendria que pasarlos a sus propios archivos y que sean los cats de dichos
 
 #Archivos de Fractal (?)
@@ -25,7 +25,9 @@ alias ..="cd .."
 alias ...="cd ../.."
 alias drop="cd ~/Dropbox/"
 alias desk="cd ~/Desktop/"
-
+function cdl(){
+	cd $1; ls
+}
 #Viewing
 alias la="ls -lah"
 alias laa="ls -lahF"
@@ -65,7 +67,7 @@ alias grep="grep --color=auto"
 alias dotshell="mate ~/.profile"
 alias .bash="dotshell"
 alias .git="mate ~/.git_aliases"
-alias .lein="mate ~/lein_aliases"
+alias .lein="mate ~/.lein_aliases"
 alias .hosts="mate ~/.ssh/config"
 
 # package management
@@ -77,33 +79,6 @@ alias saptu="sudo apt-get upgrade"
 alias saptd="sudo apt-get update"
 alias saptc="apt-cache search"
 alias sapts="apt-cache show"
-
-
-
-
-
-#PATH=$PATH:~/.cljr/bin/
-#export PATH
-##
-# Your previous /Users/nex/.profile file was backed up as /Users/nex/.profile.macports-saved_2011-04-18_at_13:30:38
-##
-
-
-#buenas utils OSX
-alias eject='hdiutil eject' #drutil
-alias emptytrash="rm -rfv ~/.Trash"
-# Show/hide hidden files in Finder
-alias show="defaults write com.apple.Finder AppleShowAllFiles -bool true && killall Finder"
-alias hide="defaults write com.apple.Finder AppleShowAllFiles -bool false && killall Finder"
-# Hide/show all desktop icons (useful when presenting)
-alias hided="defaults write com.apple.finder CreateDesktop -bool false && killall Finder"
-alias showd="defaults write com.apple.finder CreateDesktop -bool true && killall Finder"
-#screensaver at desktop
-alias ss="/System/Library/Frameworks/ScreenSaver.framework/Resources/ScreenSaverEngine.app/Contents/MacOS/ScreenSaverEngine -background"
-#Sound, notifications
-alias stfu="osascript -e 'set volume output muted true'"
-alias pumpitup="osascript -e 'set volume 10'"
-alias hax="growlnotify -a 'Activity Monitor' 'System error' -m 'WTF R U DOIN'"
 
 
 #Functions
@@ -120,20 +95,6 @@ digga() {
 google() {
       python -c "import sys, webbrowser, urllib;   webbrowser.open('http://www.google.com/search?' + urllib.urlencode({'q': ' '.join(sys.argv[1:]) }))" $@
   }
-
-#serch 4 a file w/spotlight
-spotlightfile() {
-    mdfind "kMDItemDisplayName == '$@'wc";
-}
-#serch 4 contents w/spotlight
-spotlightcontent() {
-    mdfind -interpret "$@";
-}
-vman () {
-     man -t $1 | open -a /Applications/Preview.app -f
-  }
-alias sf=spotlightfile
-alias sc=spotlightcontent
 alias ggl=google
 
 
@@ -214,14 +175,42 @@ bu () {
 	cp $1 ${1}-`date +%Y%m%d%H%M`.backup
 }
 
-
+#OSX ESPECIFICO
 #OSX defaults
 # Expand save panel by default
 #defaults write NSGlobalDomain NSNavPanelExpandedStateForSaveMode -bool true
 # Disable the “Are you sure you want to open this application?” dialog
 #defaults write com.apple.LaunchServices LSQuarantine -bool false
 
+#buenas utils OSX
+alias eject='hdiutil eject' #drutil
+alias emptytrash="rm -rfv ~/.Trash"
+# Show/hide hidden files in Finder
+alias show="defaults write com.apple.Finder AppleShowAllFiles -bool true && killall Finder"
+alias hide="defaults write com.apple.Finder AppleShowAllFiles -bool false && killall Finder"
+# Hide/show all desktop icons (useful when presenting)
+alias hided="defaults write com.apple.finder CreateDesktop -bool false && killall Finder"
+alias showd="defaults write com.apple.finder CreateDesktop -bool true && killall Finder"
+#screensaver at desktop
+alias ss="/System/Library/Frameworks/ScreenSaver.framework/Resources/ScreenSaverEngine.app/Contents/MacOS/ScreenSaverEngine -background"
+#Sound, notifications
+alias stfu="osascript -e 'set volume output muted true'"
+alias pumpitup="osascript -e 'set volume 10'"
+alias hax="growlnotify -a 'Activity Monitor' 'System error' -m 'WTF R U DOIN'"
 
+#serch 4 a file w/spotlight
+spotlightfile() {
+    mdfind "kMDItemDisplayName == '$@'wc";
+}
+#serch 4 contents w/spotlight
+spotlightcontent() {
+    mdfind -interpret "$@";
+}
+vman () {
+     man -t $1 | open -a /Applications/Preview.app -f
+  }
+alias sf=spotlightfile
+alias sc=spotlightcontent
 
 #Emailin osx only?
 function e {
@@ -277,10 +266,7 @@ alias upgp="mvn install:install-file -DgroupId=fractal  \
 
 
 
-# MacPorts Installer addition on 2011-04-18_at_13:30:38: adding an appropriate PATH variable for use with MacPorts.
 export PATH=/opt/local/bin:/opt/local/sbin:$PATH
-# Finished adapting your PATH environment variable for use with MacPorts.
-#add ruby to path
 export PATH=/Users/nex/.gem/ruby/1.8/bin:$PATH
 export DYLD_FALLBACK_LIBRARY_PATH=/opt/local/lib
 export PATH=$PATH:~/git/scripts/
