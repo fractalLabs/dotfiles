@@ -1,0 +1,2 @@
+bind -x '"\C-l":"ls"'
+bind -x '"\C-h":"history | tail"'
