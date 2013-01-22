@@ -1,0 +1,38 @@
+!
+! Swap Caps_Lock and Control_L
+!
+remove Lock = Caps_Lock
+remove Control = Control_L
+keysym Control_L = Caps_Lock
+keysym Caps_Lock = Control_L
+add Lock = Caps_Lock
+add Control = Control_L
+!
+! Redefine ñ so we have : there by default.
+!
+! Swap colon and semicolon, add ntildes
+keysym semicolon = colon semicolon ntilde Ntilde Ntilde 
+!
+keysym a = a A aacute Aacute
+keysym e = e E eacute Eacute
+keysym i = i I iacute Iacute
+keysym o = o O oacute Oacute
+keysym u = u U uacute Uacute
+!
+! Redefine - so we have / there by default. (for quick searching)
+!
+!keycode  61 = slash question slash question underscore dead_belowdot
+!
+! Swap {,} with [,] so ^[ is a two-key deal.
+!
+!keycode  48 = parenleft bracketleft braceleft 
+!keycode  51 = parenright bracketright braceright 
+!
+! Need a one-key minus for command-line options. Apostrophe is useful, dead_whatever is not.
+!
+!keycode  20 = minus underscore minus underscore backslash questiondown
+!keycode  21 = apostrophe dead_grave apostrophe dead_grave questiondown exclamdown dead_cedilla
+!
+! Get AltGr backR
+keycode 108 = Mode_switch
+!

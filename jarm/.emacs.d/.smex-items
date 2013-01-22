@@ -1,0 +1,42 @@
+
+;; ----- smex-history -----
+(
+ undo
+ shell
+ load-theme
+ browse-url-w3
+ package-list-packages
+ shell-command
+ set-background-color
+)
+
+;; ----- smex-data -----
+(
+ (apropos-command . 6)
+ (kill-some-buffers . 1)
+ (package-list-packages . 4)
+ (org-mode . 3)
+ (normal-mode . 2)
+ (org-require-autoloaded-modules . 1)
+ (undo . 5)
+ (set-mark-command . 1)
+ (yank . 1)
+ (copy-to-register . 1)
+ (set-background-color . 15)
+ (set-foreground-color . 1)
+ (auto-indent-mode . 2)
+ (show-paren-mode . 2)
+ (paredit-mode . 3)
+ (enable-paredit-mode . 2)
+ (global-rainbow-delimiters-mode . 2)
+ (auto-fill-mode . 2)
+ (paredit-forward . 2)
+ (paredit-close-parenthesis-and-newline . 1)
+ (toggle-auto-composition . 1)
+ (split-window . 1)
+ (shell . 6)
+ (shell-command . 6)
+ (browse-url-w3 . 1)
+ (w3m . 2)
+ (load-theme . 5)
+)

@@ -1,0 +1,46 @@
+[global_config]
+  title_transmit_bg_color = "#555753"
+[keybindings]
+[profiles]
+  [[default]]
+    scrollback_infinite = True
+    cursor_color = "#cecece"
+  [[dark]]
+    scrollbar_position = hidden
+    palette = "#232323:#ff2f6a:#acc900:#ff9900:#095c91:#bb66ff:#00c99b:#bbbbbb:#555753:#ff44cc:#96ff00:#fce94f:#009cff:#9e91ff:#00d8ff:#eeeeee"
+    background_darkness = 0.84
+    use_system_font = False
+    cursor_color = "#ebebeb"
+    foreground_color = "#eeeeee"
+    font = Inconsolata Medium 12
+    background_color = "#232323"
+    scrollback_infinite = True
+  [[white]]
+    scrollbar_position = hidden
+    palette = "#232323:#ff2f6a:#acc900:#ff9900:#095c91:#bb66ff:#00c99b:#bbbbbb:#555753:#ff44cc:#96ff00:#fce94f:#009cff:#9e91ff:#00d8ff:#eeeeee"
+    use_system_font = False
+    foreground_color = "#000000"
+    font = Inconsolata Medium 11
+    background_color = "#ffffff"
+    scrollback_infinite = True
+  [[transparent]]
+    scrollbar_position = hidden
+    palette = "#232323:#ff2f6a:#acc900:#ff9900:#095c91:#bb66ff:#00c99b:#bbbbbb:#555753:#ff44cc:#96ff00:#fce94f:#009cff:#9e91ff:#00d8ff:#eeeeee"
+    background_darkness = 0.85
+    background_type = transparent
+    use_system_font = False
+    foreground_color = "#eeeeee"
+    font = Inconsolata Medium 12
+    background_color = "#232323"
+    scrollback_infinite = True
+[layouts]
+  [[default]]
+    [[[child1]]]
+      type = Terminal
+      parent = window0
+      profile = terminus
+      command = ""
+    [[[window0]]]
+      type = Window
+      parent = ""
+[plugins]

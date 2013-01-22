@@ -1,0 +1,76 @@
+;;; -*- coding: utf-8 -*-
+
+;; ----- ido-last-directory-list -----
+(
+ ("/home/jarm/src/clojure-koans/src/" . "koans/")
+ ("/home/jarm/src/" . "tracking/")
+ ("/home/jarm/" . ".emacs.d/")
+ ("/home/" . "jarm/")
+ ("/home/jarm/.emacs.d/elpa/" . "starter-kit-2.0.3/")
+ ("/home/jarm/.emacs.d/" . "elpa/")
+)
+
+;; ----- ido-work-directory-list -----
+(
+ "/home/jarm/src/tracking/"
+ "/home/jarm/"
+ "/home/jarm/.emacs.d/"
+ "/home/jarm/src/clojure-koans/src/koans/"
+ "/home/jarm/.emacs.d/elpa/starter-kit-2.0.3/"
+ "/home/jarm/src/scripts/"
+ "/home/jarm/src/adler/"
+ "/tmp/"
+ "/home/jarm/src/admetrix/"
+)
+
+;; ----- ido-work-file-list -----
+(
+ "logs.js"
+ "fmx.js"
+ ".bashrc"
+ "init.el"
+ "01_equalities.clj"
+ "starter-kit-autoloads.el"
+ "archivo"
+ ".xmodmaprc"
+ "proxytest.sh"
+ "adler.js"
+)
+
+;; ----- ido-dir-file-cache -----
+(
+ ("/home/jarm/src/tracking/" (20661 34281 280144 310000) "logs" "logs.js" "read.txt" ".read.txt.swp" "fmx.js~" "README.md" "../" "write.txt" "./" "logs.htm" "lz.js" ".git/" "fmx.js" "test.html~" "logs.str" "hash.js" "test.html")
+
+ ("/home/jarm/" (20662 22658 34507 336000) ".vimrc" "xpra.tgz" ".pulse/" ".Xauthority" ".gnome2/" "sde.7z" "sda.7z" ".lesshst" "tarballs/" "wiki/" "interfaces.dhcp" "#.recentf#" ".goutputstream-PBU9LW" ".macromedia/" ".adobe/" ".goutputstream-XWDBNW" ".ssh/" ".xmodmaprc" ".purple/" ".pki/" ".gtk-bookmarks" "repl-port" ".thunderbird/" ".thumbnails/" ".goutputstream-KH4QOW" ".gvfs/" "src/" "#todo.org#" ".viminfo" "apache-errors" ".selected_editor" ".xsession-errors.old" "../" ".rhino_history" ".goutputstream-XHJMLW" ".inputrc" ".gksu.lock" ".dbus/" "Downloads/" ".recentf" "./" ".goutputstream-NF6ONW" ".local/" ".ICEauthority" ".cvspass" ".config/" ".gstreamer-0.10/" "#archivo#" "ebooks/" ".goutputstream-VGKIOW" ".bash_logout" ".#archivo" ".spe/" ".vimperator/" ".mission-control/" ".cache/" ".bash_history" ".vboxclient-clipboard.pid" ".npm/" "apache/" "logs.tgz" ".xsession-errors" ".w3m/" ".profile" "Desktop/" ".mozilla/" ".fontconfig/" ".node-gyp/" ".gnome2_private/" "todo" ".bashrc" ".gconf/" ".goutputstream-0VPZNW" "sdc.7z" "todo.org" ".emacs.d/" ".Rhinotebufferfile" "tmp/" ".vboxclient-seamless.pid" ".vim/" ".dmrc" ".ido.last" ".lein/" ".pulse-cookie" ".vboxclient-display.pid" "node_modules/" "conf.tgz" "bin/" ".m2/" ".compiz-1/")
+
+ ("/home/jarm/src/clojure-koans/src/koans/" (20662 22654 794548 72000) "12_creating_functions.clj" "09_runtime_polymorphism.clj" "06_functions.clj" "04_sets.clj" "14_destructuring.clj" "08_higher_order_functions.clj" "17_macros.clj" "07_conditionals.clj" "#01_equalities.clj#" "05_maps.clj" "01_equalities.clj" "10_lazy_sequences.clj" "../" "19_java_interop.clj" "18_datatypes.clj" "./" ".#01_equalities.clj" "15_refs.clj" "20_partition.clj" "13_recursion.clj" "16_atoms.clj" "11_sequence_comprehensions.clj" "02_lists.clj" "03_vectors.clj")
+
+ ("/home/jarm/src/clojure-koans/src/" (20637 43151 470515 168000) "../" "./" "koans/")
+
+ ("/home/jarm/src/clojure-koans/" (20659 57097 755374 796000) "#README.md#" "ideaboard.txt" "src/" "target/" ".gitignore" "README.md" "epl-v10.html" "../" "script/" "./" ".git/" "project.clj" "resources/" ".#README.md")
+
+ ("/home/jarm/apache/" (20646 35923 486275 831000) "conf/" "logs/" "../" "./")
+
+ ("/home/jarm/.emacs.d/elpa/starter-kit-2.0.3/" (20635 5260 128159 384000) "../" "./" "starter-kit-autoloads.el" "starter-kit-pkg.el" "starter-kit-defuns.el" "starter-kit-autoloads.el~" "starter-kit.el" "starter-kit-misc.el")
+
+ ("/home/jarm/.emacs.d/elpa/" (20661 28921 211529 498000) "ac-slime-0.2/" "highlight-indentation-0.5.0/" "slime-20100404.1/" "archives/" "pyvirtualenv-1.0/" "org-20121105/" "smex-2.0/" "elisp-slime-nav-0.2/" "popup-0.5/" "guru-mode-0.1/" "../" "autopair-0.3/" "pymacs-0.25/" "auto-complete-1.4/" "elpy-0.7/" "starter-kit-lisp-2.0.3/" "./" "paredit-22/" "yasnippet-0.8.0/" "ido-ubiquitous-1.5/" "rainbow-delimiters-1.3.4/" "find-file-in-project-3.2/" "clojure-test-mode-1.6.0/" "magit-1.2.0/" "starter-kit-eshell-2.0.3/" "git-auto-commit-mode-4.1/" "ac-nrepl-0.12/" "crontab-mode-1.2/" "clojure-mode-1.11.5/" "starter-kit-2.0.3/" "nrepl-0.1.5/" "idle-highlight-mode-1.1.2/" "hackernews-0.1/" "starter-kit-bindings-2.0.2/" "auto-indent-mode-0.79/" "fuzzy-0.1/" "markdown-mode-1.8.1/" "align-cljlet-0.2/")
+
+ ("/home/jarm/.emacs.d/" (20662 21602 159781 485000) "backups/" "init.el" "elpa/" "../" "./" "session.10a4b6e75fe85b3883135267590594062500000013430039" "url/" "session.101840f1b59a9f59f2135411961186295800000013320041" "places" "auto-save-list/" ".smex-items" "session.10cacf504e63f58d7a135268376974046100000060340039" "session.10a515c46290155f1a13527695162309500000013330042")
+
+ ("/home/jarm/src/scripts/" (20659 59832 96999 467000) "kludges/" "smap_purge" ".proxytest.sh.swp" "re-downl.py" "integrity" "README.md" "../" "install_ansible" "notif-faltantes.py" "./" "posadas/" "get-conversions" ".git/" "head" "anonlist" "respaldo_smap" "proxylist" "dotfiles/" "proxytest.sh")
+
+ ("/home/jarm/src/adler/" (20661 22798 176506 473000) "README.txt" "utils/" "urls.txt.old" "urls.txt" "padler.js" ".gitignore" "cleanup.sh" "../" "includes/" "./" "phantomjs.tar.gz" "adler-youtube.js" "adler.js" ".git/" "run-adler" "README.logs" "run-adler.real")
+
+ ("/home/jarm/src/" (20661 22798 176506 473000) "dass/" "now/" "tracking/" "dass-files/" "adler/" "wkml/" "report/" "clojure-koans/" "repos" "../" "tagger/" "pb/" "./" "admetrix/" "parti-all-0.0.6/" "scripts/" "pssh/" "imacros/" "npm-debug.log" "poll/" "puppet/" "VimClojure/")
+
+ ("/tmp/" (20659 16309 695055 165000) "ssh-BnDDoch10731/" "unity_support_test.0" "pulse-PKdhtXMmr18n/" ".com.google.Chrome.HYXqRf/" "CRX_75DAF8CB7768/" "faxban26599831.tif" ".X11-unix/" "babel-112181-z/" "../" "hsperfdata_jarm/" ".ICE-unix/" "./" "orbit-jarm/" "keyring-cRNusQ/" "filetK1TvJ" ".X0-lock" "pulse-tLegUSowrOpt/" "E3E1CF490DF3FBC99D716015887707D80AEEA9C4.23.0.1271.64_service_ipc" "ssh-ldAFRbgH1338/")
+
+ ("/home/jarm/src/admetrix/" (20571 45814 142532 466000) "admetrixb.sql" "esquema.sql" "queryunica" ".lein-deps-sum" "src/" "el_smap-backup.sql" "downl" ".gitignore" "qerys" "README.md" "../" "convierte.py" "baja-imgs" "./" "Visualizar/" ".git/" "project.clj" "importador.py" "test/")
+
+ ("/home/" (20499 18198 691770 326000) "../" "jarm/" "./")
+
+ ("/home/jarm/.emacs.d/elpa/markdown-mode-1.8.1/" (20635 4218 249257 578000) "markdown-mode-pkg.elc" "markdown-mode.el" "markdown-mode.elc" "../" "./" "markdown-mode-autoloads.el" "markdown-mode-pkg.el")
+)
+
+;; ----- ido-unc-hosts-cache -----
+t

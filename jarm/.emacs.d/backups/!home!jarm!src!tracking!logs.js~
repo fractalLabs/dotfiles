@@ -1,0 +1,19 @@
+/* logs.js
+ */
+    
+    if (arguments.length < 1){ print("Usage: logs.js ARCHIVO ") };
+
+var logfile = readFile(arguments[0]);
+var lines = logfile.split('\n');
+var hits;
+
+function processLine(var line)
+
+
+for (var i in lines){
+    if (lines[i].indexOf('/pixel.gif?' != -1)){
+        hits.concat(lines[i]);
+    }
+}
+
+for (var i in hits)
